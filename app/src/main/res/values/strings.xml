@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MovieProject</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nowplaying">NOW PLAYING</string>
+    <string name="upcomming">upcomming</string>
+    <string name="detail">Detail</string>
+    <string name="share">Share</string>
+    <string name="menu1">menu1</string>
+    <string name="menu_2">menu_2</string>
+    <string name="search">search</string>
+    <string name="shared">Shared</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="search_here">Search here</string>
+</resources>

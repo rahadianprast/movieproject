@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".DetailActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbardetail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:titleTextColor="#fff"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/app_name">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/linear_atas"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/toolbardetail"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/loading_shape"
+            android:id="@+id/aa_thumbnail"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+            <TextView
+                android:id="@+id/aa_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="movie Title"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/aa_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rating_background"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_star_black_24dp"
+                android:paddingRight="5dp"/>
+            <TextView
+                android:id="@+id/aa_releseasedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relese Date"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/linear_atas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp">
+        <TextView
+            android:id="@+id/aa_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="overview"
+            android:textAlignment="gravity"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</RelativeLayout>
